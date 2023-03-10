@@ -1,0 +1,427 @@
+$margin: 0;
+$colorhover: antiquewhite;
+$colorletter: black;
+$colortitles: bisque;
+$colorwhite: white;
+
+/*/ No logre aplicar sintaxis de Sass en todo el documento /*/
+
+
+
+body{
+    font-family: sans-serif;
+    margin: $margin; 
+    background-color: $colorletter;
+    color:$colorhover;
+    padding: 0;
+}
+
+@import "header-paginas";
+
+body{
+
+    .redes img{
+        display: flex;
+        height: 40px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        margin-right: 2rem;
+        &:hover{
+            transform: scale(2);
+        }
+
+    
+
+
+
+
+}
+
+
+
+
+.fotorespo{
+    display:flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    height: 500;
+    width: 316;
+
+}
+
+a{
+    text-decoration: none;
+    color: $colorletter;
+}
+
+
+    
+
+
+
+.movies{
+    text-align: center;
+    }
+
+.titulo{
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    
+}
+
+.fotorespo img{
+    width: 500;
+    height: 316;
+}
+
+
+.redes{
+    background-image: url(../Images/1.jpeg);
+   
+
+
+}
+
+
+.redes a{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.galeria{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    }
+
+ .igintegrantes{
+    display: flex;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+    height: 30px;
+    flex-direction: row; 
+    }
+ .igintegrantes img{
+    display: flex;
+    height: 40px;
+    margin-bottom: 70px;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.barravideos img{ 
+    height: 40px;
+    margin-bottom: 40px;
+    margin-right: 2rem;
+    &:hover{
+        transform: scale(2);
+    }
+}
+
+.barravideos a{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.barravideos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+h1 {
+    color:$colortitles;
+
+}
+
+h4 {
+ color: $colortitles;
+
+}
+
+
+.piedepagina{
+    display: flex;
+    min-height: 70px;
+    background-color:$colortitles;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    
+
+    img {
+        height: 50px;
+        margin-right: 10px;
+         border: 2px;
+        border-radius: 25px;
+
+    } }
+
+}
+
+
+contacto{
+
+    .fechas-proximas a{
+        color: $colorhover;
+        
+        
+    }
+    
+    .formularios-contacto form{
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formularios-contacto textarea{
+        height: 10rem;
+        width: 80rem;
+        
+    }
+    
+    .boton-enviar{
+        margin:2rem 0 2rem 2rem;
+    }
+
+}
+
+
+
+.cambio-fuente{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $colorhover;
+    text-align: center;
+    line-height: 2;
+    
+
+    
+}
+
+p{
+    color: $colorhover;
+}
+
+#alinear{
+    font-size:small;
+    display:flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+    text-align: center;
+
+
+
+    
+}
+
+#alinear iframe{
+    margin: 2rem 0rem 2rem 2rem; 
+}
+
+.banda{
+    grid-area: banda;
+    
+    
+}
+
+.fotosbio{
+    display: grid;
+    grid-template-rows: repeat(3,fr);
+    grid-template-columns: repeat(2,fr);
+    grid-template-areas: 
+    'banda banda'
+    'cantante bajo'
+    'coros bateria';
+    justify-items: center ;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.fotosbio img{
+    height: 200px;
+
+}
+
+
+.videos{
+    text-align: center;
+}
+
+.headerform {
+    color: $colortitles;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.nombrebanda{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium
+    
+}
+
+.fotitos{
+    display: flex;
+    width: 500px;
+    height: 430px;
+    
+}
+
+.fotitos img{
+    width:0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 8seg;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+
+
+
+}
+
+.fotitos img:hover{
+    cursor:crosshair;
+    width: 300px;    
+    opacity: 1;
+    filter: contrast (120%);
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+
+}
+
+.carrusel{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.fotosfecha{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+
+}
+
+@media (max-width:425px) {
+    .barra{
+        display:flex; 
+        flex-direction:column;
+       
+    }
+    .barra a{
+        margin-top: 1rem;
+    }
+
+    .carrusel img{
+        height: 300px;
+        width: 320px;
+    }
+             
+    }
+    
+    .copy{
+        display: none;
+
+    }
+    .videos{
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        flex-flow:column nowrap;
+        align-items: center;
+    }
+   
+    .barravideos{
+        display: flex;
+        flex-flow: wrap;
+        margin-top: 1rem;
+    }
+
+    .fotorespo img{
+        display: flex;
+        height: 10rem;
+        width: 18rem;
+        align-items: center;
+        padding: 50px;
+        flex-flow: column;
+        
+    }
+    
+    .fotorespo img{
+        width: 500;
+        height: 316;
+    }
+
+    .copy{
+    color: $colorletter
+}
+
+@media (max-width:320px) {
+    
+    .carrusel img{
+        display: flex;
+        height: 250px;
+        align-items: center;
+        padding: auto;
+        margin: 0px;
+        justify-content: center;
+    }
+    
+    .carrusel{
+        display: flex;
+        align-content: center;
+    }
+
+    .elemento{
+        margin: auto;
+    }
+       
+    
+    .fotitos img{
+        display:flexbox;
+        width: 80px;
+        height: 150px;
+        flex-grow: initial;
+        
+
+    }
+
+    
+}
